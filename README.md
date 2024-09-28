@@ -1,15 +1,18 @@
-# passport-pdf-concat
+# Passport PDF Concat
 
-To install dependencies:
+A small tool to concatenate multiple Passport data pages by ID, used
+to generate printables for Passport Ceremony prep work.
 
-```bash
+## Installation
+
+```sh
+git clone https://github.com/rayhanadev/passport-pdf-concat.git
+cd passport-pdf-concat
 bun install
 ```
 
-To run:
+## Usage
 
-```bash
-bun run src/index.ts
+```sh
+bun start <start><end>
 ```
-
-This project was created using `bun init` in bun v1.1.8. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
