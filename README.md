@@ -14,5 +14,5 @@ bun install
 ## Usage
 
 ```sh
-bun start <start><end>
+bun run src/index.ts <start> <end>
 ```
