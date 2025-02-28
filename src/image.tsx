@@ -6,7 +6,7 @@ import satori, { type SatoriOptions } from "satori";
 // however this can be adjusted to fit your needs. When printing from Chrome the
 // highest DPI is 1200.
 const DPI = 1200;
-const IMAGE_GENERATION_SCALE_FACTOR = 3;
+const IMAGE_GENERATION_SCALE_FACTOR = 3.21;
 const PASSPORTS_PER_PAGE = 2;
 const DATA_PAGE_TOP_HALF_URL =
   "https://data.passports.purduehackers.com/page-1-second-half.png";
@@ -125,7 +125,7 @@ async function renderPageAsImage(image: JSX.Element) {
         FONTS.map(async (data) => ({
           name: data.name,
           data: await fetch(data.url).then((res) => res.arrayBuffer()),
-        }))
+        })),
       )),
     ],
   } satisfies SatoriOptions;
